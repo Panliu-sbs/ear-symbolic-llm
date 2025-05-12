@@ -1,0 +1,9 @@
+EAR Triplets:
+   ('TestSuite', 'TestCase1', 'Rinc')
+   ('TestCase1', 'ModuleA', 'Rbel')
+   ('ModuleA', 'ModuleB', 'Rdep')
+   ('executionTime', '4s', 'Ragg')
+   ('TotalTime', '<10', 'Rconstr')
+
+Algebraic Expression:
+  TestSuite ⋅ TestCase1 ⋅ ModuleA ⋅ ModuleB ⋅ executionTime → TotalTime ⋅ TotalTime / {TotalTime <10}
