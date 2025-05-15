@@ -10,7 +10,7 @@ This repository contains the benchmark dataset and evaluation results for the pa
 
 ## 📘 Overview
 
-This dataset supports comparative evaluation of symbolic–neural reasoning with large language models (LLMs). It includes structured algebraic inputs derived from knowledge graphs (EAR model), standard LLM prompts, CoT-style prompts, and corresponding ground-truth answers. The evaluation covers 310 tasks spanning four major reasoning types.
+This dataset supports comparative evaluation of symbolic–neural reasoning with large language models (LLMs). It includes structured algebraic inputs derived from knowledge graphs (EAR model), standard LLM prompts, CoT-style prompts, and corresponding ground-truth answers. The evaluation covers 326 tasks spanning four major reasoning types.
 
 ---
 
@@ -32,11 +32,11 @@ This dataset supports comparative evaluation of symbolic–neural reasoning with
 | Type  | Description                                 | Count |
 |-------|---------------------------------------------|--------|
 | A     | Structural reasoning (hierarchy, inclusion) | 123    |
-| B     | Constraint-based algebraic reasoning        | 140    |
-| C     | Multimodal abstraction (charts/tables)      | 44     |
-| D     | Ambiguity resolution and coreference        | 49     |
-| A+B+  | Composite (multi-type) tasks                | 46     |
-|       | **Total**                                   | **310**|
+| B     | Constraint-based algebraic reasoning        | 147    |
+| C     | Multimodal abstraction (charts/tables)      | 45     |
+| D     | Ambiguity resolution and coreference        | 48     |
+| A+B+  | Composite (multi-type) tasks                | 47     |
+|       | **Total**                                   | **326**|
 
 ---
 
@@ -47,6 +47,7 @@ This dataset supports comparative evaluation of symbolic–neural reasoning with
   - EAR + Algebraic Expression Input  
   - Standard LLM Prompt  
   - CoT Prompt ("Please step by step")
+  - Program-Aided Input
 - **Evaluation Metrics**:
   - Answer Accuracy  
   - Trace Faithfulness  
@@ -59,7 +60,7 @@ This dataset supports comparative evaluation of symbolic–neural reasoning with
 
 | File Name                         | Description |
 |----------------------------------|-------------|
-| `Generated_EAR_vs_LLM_Prompts.xlsx` | Each row contains EAR–Algebraic input, plain LLM input, CoT input, and ground truth. Sheet0–32 are organized by task batch. |
+| `Generated_EAR_vs_LLM_Prompts.xlsx` | Each row contains EAR–Algebraic input, plain LLM input, CoT input, Program-aided input, and ground truth. Sheet0–33 are organized by task batch. |
 | `type.xlsx`                      | Reasoning type annotations per task (Sheet1). |
 | `Experimental Result.xlsx`       | Per-task scores for accuracy, faithfulness, constraint compliance, and interpretability. |
 | `Result analysis.xlsx`           | Aggregated results, comparisons by type (A/B/C/D), and visualization references. |
